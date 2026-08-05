@@ -9,44 +9,62 @@
             box-sizing: border-box;
         }
 
-        .navegador ul {
-        list-style-type: none;
+
+        #navegador ul.navhorizontal {
+        position: fixed;
+        top: 0;
+        left: 0;}
+
+        #navegador ul{
         margin: 0;
         padding: 0;
-        width: 150px;
-        background-color: rgb(182, 179, 179);
-        z-index: 1;
-        }
-
-        .navegador ul li {
+        width: 100%;
+        background-color: rgba(239, 137, 137,0.9);
+        display: flex;
+    }
+    
+    #navegador ul li {
         position: relative;
-        top: 0;
+        list-style-type: none;
+        flex: 1;
+        }
+
+        #navegador ul.navhorizontal li a {
+            display: block;
+            text-decoration: none;
+            color: #e2144a;
+            padding: 14px 16px;
+            border: 1px solid #555;
+            text-align: center;
+        }
         
-        }
 
-        .navegador  li ul{
+        #navegador li ul {
+        list-style-type: none;
         position: absolute;
-        top: 0;
-        left: 100%;
+        top: 100%;
+        left: 0;
+        margin: 0;
+        padding: 0;
         display: none;
+        background-color: #e2144a;
+        min-width: 100%;
+        }
+        
+        #navegador ul li a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+            background-color: #555;
         }
 
-        .navegador  ul li a {
+        #navegador ul li:hover ul {
         display: block;
-        text-decoration: none;
-        color: #e2144a;
-        padding: 8px;
-        border: 1px solid #555;
+        background-color: rgb(125, 180, 228);
         }
 
-        .navegador  ul li a:hover {
-        text-decoration: underline;
-        font-weight: bold;
-        background-color: #555;
-        }
-
-        .navegador  li:hover ul {
-        display: block;
+        #navegador ul li:hover > a{
+            display: block;
+            background-color: rgb(73, 244, 244);
         }
 
         .guia {
@@ -118,30 +136,33 @@
 </head>
 <body>
     <section id="inicio">
+        <p></p>
     </section>
 
     <br><br>
 
-    <div class="navegador">
+    <div id="navegador">
         <ul class="navhorizontal">
-            <li><a href="index.html">Sobre mim</a></li> 
+            <li ><a href="#Sobremim">Sobre mim</a> 
                 <ul>
                     <li><a href="">Informações Pessoais</a></li>
                     <li><a href="">Hobbies</a></li>
                     <li><a href="">Apresentação</a></li>
                 </ul>
-            <li><a href="noticias.html">Formação</a></li>
+            </li>
+            <li><a href="#Formação">Formação</a>
                 <ul>
                     <li><a href="">Cursos</a></li>
                     <li><a href="">Idiomas</a></li>
                     <li><a href="">Formação Educacional</a></li>
                 </ul>
-                
-            <li><a href="contato.html">Portifolio</a></li> 
+            </li>    
+            <li><a href="contato.html">Portifolio</a> 
                     <ul>
                         <li><a href="">Trabalhos ja realizados</a></li>
                     </ul>
-            <li><a href="contato.html">Contato</a></li> 
+            </li>
+                    <li><a href="contato.html">Contato</a></li> 
         </ul> 
     </div>
     
