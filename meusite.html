@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus.Site</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .navegador ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 150px;
+        background-color: rgb(182, 179, 179);
+        z-index: 1;
+        }
+
+        .navegador ul li {
+        position: relative;
+        top: 0;
+        
+        }
+
+        .navegador  li ul{
+        position: absolute;
+        top: 0;
+        left: 100%;
+        display: none;
+        }
+
+        .navegador  ul li a {
+        display: block;
+        text-decoration: none;
+        color: #e2144a;
+        padding: 8px;
+        border: 1px solid #555;
+        }
+
+        .navegador  ul li a:hover {
+        text-decoration: underline;
+        font-weight: bold;
+        background-color: #555;
+        }
+
+        .navegador  li:hover ul {
+        display: block;
+        }
+
+        .guia {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(49, 240, 39, 0.7);
+            color: black;
+            padding: 10px;
+            border-radius: 100px;
+            z-index: 1000;
+            
+        }
+
+        .guia ul {
+            display: block;
+            width: 100%;
+            background-color: rgba(230, 126, 126, 0.7);
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        .guia ul li {
+        flex: 1;/*cada item ocupa o mesmo espaço*/
+        list-style-type: none;
+        
+        }
+
+        .guia ul li a{
+        display: block;     
+        padding: 2px 10px;       
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        border: 1px solid black;
+        
+        }
+
+        .guia ul li a:hover {
+            background-color: rgb(64, 0, 255);
+            color: white;
+            
+        }
+        
+        .guia ul li a:active {
+            background-color: rgb(255, 0, 179);
+            color: white;
+        }
+        
+        #fim{
+            
+            transform: skew(5deg,-30deg);           
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(255, 0, 0, 0.3);
+            color: black;
+            padding: 10px;
+            text-align: center;
+            z-index: 1;/* para que fique a frente dos outros elementos */
+
+        }
+
+        
+        
+    </style>
+
+</head>
+<body>
+    <section id="inicio">
+    </section>
+
+    <br><br>
+
+    <div class="navegador">
+        <ul class="navhorizontal">
+            <li><a href="index.html">Sobre mim</a></li> 
+                <ul>
+                    <li><a href="">Informações Pessoais</a></li>
+                    <li><a href="">Hobbies</a></li>
+                    <li><a href="">Apresentação</a></li>
+                </ul>
+            <li><a href="noticias.html">Formação</a></li>
+                <ul>
+                    <li><a href="">Cursos</a></li>
+                    <li><a href="">Idiomas</a></li>
+                    <li><a href="">Formação Educacional</a></li>
+                </ul>
+                
+            <li><a href="contato.html">Portifolio</a></li> 
+                    <ul>
+                        <li><a href="">Trabalhos ja realizados</a></li>
+                    </ul>
+            <li><a href="contato.html">Contato</a></li> 
+        </ul> 
+    </div>
+    
+    <br><br>
+
+    <section id="Sobremim">
+        <section id="Informações Pessoais">
+            <p></p>
+        </section>
+        <section id="Hobbies">
+            <p></p>
+        </section>
+        <section id="Apresentação">
+            <p></p>
+        </section>
+    </section>
+    
+    <br><br>
+
+    <section id="Formação">
+        <section id="Cursos">
+            <p>cursos</p>
+        </section>
+        <section id="Idiomas">
+            <p>Ingles basico (em desenvolvimento)</p>
+        </section>
+        <section id="Formação">
+            <p>Analise e desenvolvimento de Sistemas- Formação prevista oara 2028/p>
+        </section>
+    </section>
+
+    <br><br>
+
+    <section id="Portifolio">
+        <p>links para trabalhos já realizados. </p>
+    </section>
+    
+    <br><br>
+
+    <section id="Contato">
+        <p>formulário com campos nome, e-mail e mensagem (validação obrigatória em 
+JavaScript e simulação do envio). </p>
+    </section>
+
+    <br><br>
+
+    <nav class="guia">
+        <ul>
+            <li><a href="#inicio">^</a></li>
+           
+            <li><a href="#fim">v</a></li>
+        </ul>
+    </nav>
+    
+    <section id="fim">
+    </section>
+</body>
+</html>
