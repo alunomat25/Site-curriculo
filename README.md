@@ -6,8 +6,7 @@ minha formação acadêmica, experiências profissionais e habilidades de forma 
 ---
 
 ## 🚀 Demonstração
-🔗 [Acesse meu currículo online](https://seu-link-aqui.com)  
-![Screenshot do site](./screenshot.png)
+🔗 [Acesse meu currículo online]()
 
 ---
 
