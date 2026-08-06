@@ -5,11 +5,6 @@ minha formação acadêmica, experiências profissionais e habilidades de forma 
 
 ---
 
-## 🚀 Demonstração
-🔗 [Acesse meu currículo online]()
-
----
-
 ## 📚 Conteúdo
 - **Sobre mim**: informações pessoais, hobbies, apresentação.  
 - **Formação**: cursos, idiomas, formação educacional mais recente.//cursos, idiomas, formação educacional mais recente. 
