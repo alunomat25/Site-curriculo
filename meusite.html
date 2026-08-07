@@ -3,136 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Matheus.Site</title>
-    <style>
-        *{
-            box-sizing: border-box;
-        }
-
-
-        #navegador ul.navhorizontal {
-        position: fixed;
-        top: 0;
-        left: 0;}
-
-        #navegador ul{
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        background-color: rgba(239, 137, 137,0.9);
-        display: flex;
-    }
     
-    #navegador ul li {
-        position: relative;
-        list-style-type: none;
-        flex: 1;
-        }
-
-        #navegador ul.navhorizontal li a {
-            display: block;
-            text-decoration: none;
-            color: #e2144a;
-            padding: 14px 16px;
-            border: 1px solid #555;
-            text-align: center;
-        }
-        
-
-        #navegador li ul {
-        list-style-type: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        margin: 0;
-        padding: 0;
-        display: none;
-        background-color: #e2144a;
-        min-width: 100%;
-        }
-        
-        #navegador ul li a:hover {
-            text-decoration: underline;
-            font-weight: bold;
-            background-color: #555;
-        }
-
-        #navegador ul li:hover ul {
-        display: block;
-        background-color: rgb(125, 180, 228);
-        }
-
-        #navegador ul li:hover > a{
-            display: block;
-            background-color: rgb(73, 244, 244);
-        }
-
-        .guia {
-            position: fixed;
-            bottom: 0;
-            right: 0;
-            background-color: rgba(49, 240, 39, 0.7);
-            color: black;
-            padding: 10px;
-            border-radius: 100px;
-            z-index: 1000;
-            
-        }
-
-        .guia ul {
-            display: block;
-            width: 100%;
-            background-color: rgba(230, 126, 126, 0.7);
-            margin: 0;
-            padding: 0;
-            
-        }
-
-        .guia ul li {
-        flex: 1;/*cada item ocupa o mesmo espaço*/
-        list-style-type: none;
-        
-        }
-
-        .guia ul li a{
-        display: block;     
-        padding: 2px 10px;       
-        text-align: center;
-        text-decoration: none;
-        color: black;
-        border: 1px solid black;
-        
-        }
-
-        .guia ul li a:hover {
-            background-color: rgb(64, 0, 255);
-            color: white;
-            
-        }
-        
-        .guia ul li a:active {
-            background-color: rgb(255, 0, 179);
-            color: white;
-        }
-        
-        #fim{
-            
-            transform: skew(5deg,-30deg);           
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            background-color: rgba(255, 0, 0, 0.3);
-            color: black;
-            padding: 10px;
-            text-align: center;
-            z-index: 1;/* para que fique a frente dos outros elementos */
-
-        }
-
-        
-        
-    </style>
-
 </head>
 <body>
     <section id="inicio">
@@ -169,8 +42,46 @@
     <br><br>
 
     <section id="Sobremim">
-        <section id="Informações Pessoais">
-            <p></p>
+        <section id="InfPessoais">
+            <p><img class="eu"  src="eu=formal.jpg" alt="minhaImagem" title="Matheus Vilas Boas Vilela"   >
+                <table class="dadospessoais" >
+                    <tr>
+                        <th>Nome:</th>
+                        <td>Matheus Vilas Boas Vilela</td>
+                    </tr>
+                    <tr>
+                        <th>Cidade: </th>
+                        <td>Santa Rita do Sapucaí</td>
+                    </tr>
+                    <tr>
+                        <th>E-mail: </th>
+                        <td>matheus.v.dev25@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>Telefone:</th>
+                        <td>(35) 99764-7011</td>
+                    </tr>
+                    <tr>
+                        <th>Linkedin:</th>
+                        <td>LInkedIn: https://www.linkedin.com/in/matheus-vilela-dev25 </td>
+                    </tr>
+                    <tr>
+                        <th>GitHub:</th>
+                        <td>***mudar meu nome de usuario***</td>
+                    </tr>
+
+                </table>
+
+
+
+
+            </p>
+        
+        
+        
+        
+        
+        
         </section>
         <section id="Hobbies">
             <p></p>
