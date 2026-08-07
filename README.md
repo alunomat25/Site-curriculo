@@ -22,10 +22,4 @@ JavaScript e simulação do envio)
 - CSS3  
 - JavaScript   
 
----
 
-## 📂 Como executar localmente
-```bash
-git clone https://github.com/seuusuario/seu-repo.git
-cd seu-repo
-# abrir index.html no navegador
